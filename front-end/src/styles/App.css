@@ -1,0 +1,23 @@
+body {
+	background-image: url('../images/retsept.jpg');
+	background-size: 100%;
+}
+tr {
+	text-align: right;
+	width: 50%;
+}
+
+h1 {
+	text-align: right;
+	padding-top: 50px;
+
+}
+h5 {
+	margin-left: 10px;
+	text-align: right;
+	width: 450px;
+}
+
+a{
+	color: black;
+}
