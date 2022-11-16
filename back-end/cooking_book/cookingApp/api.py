@@ -15,4 +15,4 @@ class RecipeViewSet(viewsets.ModelViewSet):
     permission_classes = [
         permissions.AllowAny
     ]
-    serializer_class = CategorySerializer
+    serializer_class = RecipeSerializer
