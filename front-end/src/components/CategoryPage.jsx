@@ -7,10 +7,10 @@ function CategoryPage() {
 	const [categoryRecipes, setCategoryRecipes] = useState([])
 	const [categoryData, setCategoryData] = useState({})
 	const params = useParams()
-	const categoryId = parseFloat(params.id)
+	const catId = parseFloat(params.id)
 
 	const getCategory = () => {
-		axios(`http://127.0.0.1:8000/categories/${categoryId}/`).then(
+		axios(`http://127.0.0.1:8000/categories/${catId}/`).then(
 			(response) => setCategoryData(response.data)
 		)
 	}
@@ -18,7 +18,7 @@ function CategoryPage() {
 		axios(`http://localhost:8000/recipes/`).then((response) => {
 			const data = response.data
 			const data_filtered = data.filter(
-				(item) => item.categoryId === categoryId
+				(item) => item.catId === catId
 			)
 			setCategoryRecipes(data_filtered)
 		})
@@ -43,11 +43,11 @@ function CategoryPage() {
 					{categoryRecipes.map((recipe) => (
 						<tr key={recipe.name}>
 							<td>
-								<a href={`/recipes/${recipe.id}`}>
+								<a href={`/recipes/${recipe.id}`} style={{color: "white"}}>
 									{recipe.name}
 								</a>
 							</td>
-							<td>{recipe.text}</td>
+							<td >{recipe.text}</td>
 						</tr>
 					))}
 				</tbody>

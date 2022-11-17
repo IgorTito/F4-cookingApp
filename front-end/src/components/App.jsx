@@ -12,9 +12,9 @@ import RecipePage from './RecipePage'
 function App() {
 	return (
 		<Router>
-			<div style={{ padding: '100px' }}>
+			<div style={{ padding: '75px' }}>
 				<Button
-					variant={'outline-primary'}
+
 					size={"lg"}
 					style={{ float: "right"}}
 
@@ -22,14 +22,14 @@ function App() {
 					<Link to={'/categories'} style={{color: "black"}}>Категории</Link>
 				</Button>
 
-				<Button variant={'outline-primary'}
+				<Button
 						size={"lg"}
 						style={{ marginRight: '20px', float: "right"}}
 				>
 					<Link to={'/recipes'} style={{color: "black"}}>Рецепты</Link>
 				</Button>
 			</div>
-			<div style={{ padding: '100px' }}>
+			<div style={{ padding: '75px' }}>
 				<Routes>
 					<Route
 						exact

@@ -15,10 +15,10 @@ function Recipes(props) {
 		getRecipes()
 	}, [])
 	return (
-		<Table style={{width: 450, float: "right", border: "none"}} >
+		<Table style={{width: 450, float: "right", border: "brown", textAlign: "left"}} >
 			<thead>
 				<tr>
-					<th>Рецепты</th>
+					<th style={{textAlign: "center", color: "white", fontSize: 50}}>Рецепты</th>
 				</tr>
 			</thead>
 			<tbody>

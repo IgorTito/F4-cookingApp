@@ -6,7 +6,7 @@ function Category({ categoryName, id }) {
 			<td>
 				<a
 					href={`/categories/${id}`}
-					style={{ textDecoration: "none" }}
+					style={{ textDecoration: "none", marginRight: 15, color: "white"}}
 				>
 					{categoryName}
 				</a>

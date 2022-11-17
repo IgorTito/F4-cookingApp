@@ -18,7 +18,7 @@ function Categories(props) {
 		<Table style={{width: 450, float: "right", border: "none"}} >
 			<thead>
 				<tr>
-					<th>Категории</th>
+					<th style={{textAlign: "center", color: "white", fontSize: 50}}>Категории</th>
 				</tr>
 			</thead>
 			<tbody>

@@ -19,8 +19,11 @@ function RecipePage() {
 
 	return (
 		<>
+
 			<h1>{recipe.name}</h1>
-			<h5>{recipe.text}</h5>
+			<div style={{float: "right"}}>
+				<h5>{recipe.text}</h5>
+			</div>
 		</>
 	)
 }
