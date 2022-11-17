@@ -13,7 +13,7 @@ class Category(models.Model):
 
 
 class Recipe(models.Model):
-    categoryId = models.ForeignKey("Category", on_delete=models.CASCADE)
+    catId = models.ForeignKey("Category", on_delete=models.CASCADE)
     name = models.CharField(max_length=64)
     text = models.CharField(max_length=500)
 
