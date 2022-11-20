@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
-function RecipePage() {
+function RecPage() {
 	const [recipe, setRecipe] = useState([])
 	const params = useParams()
 	const recipeId = parseFloat(params.id)
@@ -28,4 +28,4 @@ function RecipePage() {
 	)
 }
 
-export default RecipePage;
+export default RecPage;

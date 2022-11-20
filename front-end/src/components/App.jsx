@@ -5,8 +5,8 @@ import { Button } from 'react-bootstrap'
 
 import Categories from './Categories'
 import Recipes from './Recipes'
-import CategoryPage from './CategoryPage'
-import RecipePage from './RecipePage'
+import CatPage from './CatPage'
+import RecPage from './RecPage'
 
 
 function App() {
@@ -40,12 +40,12 @@ function App() {
 					<Route
 						exact
 						path={'/categories/:id'}
-						element={<CategoryPage />}
+						element={<CatPage />}
 					/>
 					<Route
 						exact
 						path={'/recipes/:id'}
-						element={<RecipePage />}
+						element={<RecPage />}
 					/>
 				</Routes>
 			</div>

@@ -1,7 +1,14 @@
 @font-face {
-	src: url('//fonts/RobotoSlab-Bold.ttf');
-	font-family: 'RobotoSlab Bold';
+	src: url('../fonts/RubikBubbles-Regular.ttf');
+	font-family: 'RubikBubbles Regular';
+
 }
+
+@font-face {
+	src: url('../fonts/Lobster-Regular.ttf');
+	font-family: 'Lobster Regular';
+}
+
 body {
 	background-image: url('../images/retsept.jpg');
 	background-size: 100%;
@@ -15,7 +22,7 @@ h1 {
 	text-align: right;
 	padding-top: 50px;
 	color: white;
-	font-family: "RobotoSlab Bold", sans-serif;
+	font-family: "RubikBubbles Regular", sans-serif;
 
 }
 h5 {
@@ -23,6 +30,7 @@ h5 {
 	text-align: right;
 	width: 450px;
 	color: white;
+	font-family: "Lobster Regular", sans-serif;
 }
 
 a{

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import { Table } from 'react-bootstrap'
 
-function CategoryPage() {
+function CatPage() {
 	const [categoryRecipes, setCategoryRecipes] = useState([])
 	const [categoryData, setCategoryData] = useState({})
 	const params = useParams()
@@ -56,4 +56,4 @@ function CategoryPage() {
 	)
 }
 
-export default CategoryPage;
+export default CatPage;
